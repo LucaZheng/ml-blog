@@ -25,13 +25,13 @@ const SOCIALNETWORKS = [
 	}
 ]
 
-const lang = getLangFromUrl(Astro.url)
+const lang = getLangFromUrl(Astro.url as URL)
 const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
 ---
 
 <header class='relative flex items-center h-12 font-semibold'>
-	<a class='text-lg mr-auto' href={translatePath('/ml-blog/')}> {t('header.home')}</a>
+	<a class='text-lg mr-auto' href={translatePath('/')}> {t('header.home')}</a>
 
 	<div
 		id='astro-header-drawer'

@@ -31,7 +31,7 @@ const translatePath = useTranslatedPath(lang)
 ---
 
 <header class='relative flex items-center h-12 font-semibold'>
-	<a class='text-lg mr-auto' href='/ml-blog/'>Home</a>
+	<a class='text-lg mr-auto' href={translatePath('/ml-blog/')}> {t('header.home')}</a>
 
 	<div
 		id='astro-header-drawer'
@@ -43,7 +43,7 @@ const translatePath = useTranslatedPath(lang)
 			<div
 				class='flex flex-col gap-4 md:flex-row md:border-r-2 border-black pr-4 dark:border-white'
 			>
-				<HeaderLink href='ml-blog/tags' class='flex items-center gap-1 text-2xl md:text-base'>
+				<HeaderLink href='/ml-blog/tags' class='flex items-center gap-1 text-2xl md:text-base'>
 					<TagIcon /> Tags
 				</HeaderLink>
 			</div>

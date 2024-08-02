@@ -11,7 +11,8 @@ interface SiteConfig {
 export const siteConfig: SiteConfig = {
 	author: 'Luca Zheng', // Site author
 	title: 'Luca ML-Blog', // Site title.
-	description: 'I share machine learning projects with personal interpretation.', // Description to display in the meta tags
+	description:
+		'Welcome to my machine learning workhouse, where I share projects which interest me the most.', // Description to display in the meta tags
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
 	shareMessage: 'Share this post', // Message to share a post on social media

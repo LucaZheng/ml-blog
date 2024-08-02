@@ -7,7 +7,7 @@ import { remarkReadingTime } from './src/utils/readTime.ts'
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://lucazheng.github.io',
-	base: '/ml-blog', // Write here your website url
+	 // Write here your website url
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
 		drafts: true,

@@ -1,6 +1,7 @@
 ---
 import HeaderLink from '@/components/HeaderLink'
 import TwitterIcon from '@/components/icons/TwitterIcon'
+import LinkedinIcon from './icons/linkedinIcon.astro'
 import GithubIcon from '@/components/icons/GithubIcon'
 import MenuIcon from './icons/MenuIcon.astro'
 import Search from '@/components/Search'
@@ -13,14 +14,14 @@ import LanguagePicker from './LanguagePicker.astro'
 const SOCIALNETWORKS = [
 	{
 		name: 'Github',
-		url: 'https://github.com/danielcgilibert/blog-template',
+		url: 'https://github.com/LucaZheng',
 		icon: GithubIcon
 	},
 
 	{
-		name: 'Twitter',
-		url: 'https://github.com/danielcgilibert/blog-template',
-		icon: TwitterIcon
+		name: 'Linkedin',
+		url: 'https://www.linkedin.com/in/qiaomu-zheng/',
+		icon: LinkedinIcon
 	}
 ]
 
@@ -30,7 +31,7 @@ const translatePath = useTranslatedPath(lang)
 ---
 
 <header class='relative flex items-center h-12 font-semibold'>
-	<a class='text-lg mr-auto' href={translatePath('/')}> {t('header.home')}</a>
+	<a class='text-lg mr-auto' href={translatePath('/ml-blog/')}> {t('header.home')}</a>
 
 	<div
 		id='astro-header-drawer'
